@@ -869,7 +869,7 @@ img {
 ---------------------------------*/
 
 .footer {
-	background: url(../img/pw_maze_black_2X.png) left top repeat;
+	background-color: #222222;
 	padding: 35px 0 35px;
 }
 
