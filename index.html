@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="خدمات برقی همدان سرویس و تعمیر لامپ لوستر هالوژن بخاری اجاق گاز اف اف صوتی و تصویری کولر نورپردازی">
+    <meta name="keywords"
+        content="خدمات برقی همدان سرویس و تعمیر لامپ لوستر هالوژن بخاری آبگرمکن اجاق گاز اف اف صوتی و تصویری کولر نورپردازی">
     <meta name="Description"
-    content="خدمات برقی همدان سرویس و تعمیر لامپ لوستر هالوژن بخاری اجاق گاز اف اف صوتی و تصویری کولر نورپردازی">
+        content="خدمات برقی همدان سرویس و تعمیر لامپ لوستر هالوژن بخاری آبگرمکن اجاق گاز اف اف صوتی و تصویری کولر نورپردازی">
 
     <meta name="viewport" content="width=device-width, maximum-scale=1">
 
@@ -58,17 +59,21 @@
                 </h1>
                 <h3 class="animated fadeInDown delay-07s">علی مکاری</h3>
                 <ul class="we-create animated fadeInUp delay-1s">
-                    <li>نصب چراغ های لوستری، هالوژن، سقفی، متال و ...</li>
+                    <li>سرویس لوازم گاز سوز، بخاری، اجاق گاز و آبگرمکن</li>
                     <li>سیم کشی ساختمان</li>
                     <li>تعمیر لوازم برقی</li>
+                </ul>
+
+                <ul class="we-create animated fadeInUp delay-1s">
                     <li>نصب اف اف صوتی و تصویری</li>
                     <li>نصب و سرویس راه اندازی کولر</li>
-                    <li>سرویس لوازمات گاز سوز, بخاری, اجاق گاز</li>
+                    <li>نصب چراغ های لوستری، هالوژن، سقفی سنسوری و ...</li>
                 </ul>
-                <a class="link animated fadeInUp delay-1s" href="#service">
+
+                <a class="link animated fadeInUp delay-1s animated-scroll" href="#service">
                     خدمات
                 </a>
-                <a class="link animated fadeInUp delay-1s" href="#contact">
+                <a class="link animated fadeInUp delay-1s animated-scroll" href="#contact">
                     تماس با ما
                 </a>
             </div>
@@ -81,7 +86,8 @@
         <!--main-nav-start-->
         <div class="container">
             <ul class="main-nav">
-                <li class="small-logo"><a href="#header"><img src="img/logo.png" height="50" alt="الکتروتکنیک همدان"></a></li>
+                <li class="small-logo"><a href="#header"><img src="img/logo.png" height="50"
+                            alt="الکتروتکنیک همدان"></a></li>
                 <li><a href="#header">صفحه اصلی</a></li>
                 <li><a href="#service">خدمات</a></li>
                 <li><a href="#Portfolio">نمونه کار</a></li>
@@ -107,12 +113,13 @@
                 </figure>
                 <div class="col-lg-7 col-sm-8 featured-work">
                     <ul class="animated delay-1s">
-                        <li>نصب چراغ های لوستری، هالوژن، سقفی، متال و ...</li>
+                        <li>نصب چراغ های لوستری، هالوژن، سقفی سنسوری و ...</li>
                         <li>سیم کشی ساختمان</li>
                         <li>تعمیر لوازم برقی</li>
                         <li>نصب اف اف صوتی و تصویری</li>
                         <li>نصب و سرویس راه اندازی کولر</li>
-                        <li>سرویس لوازمات گاز سوز, بخاری, اجاق گاز</li>
+                        <li>سرویس لوازم گاز سوز، بخاری، اجاق گاز و آبگرمکن
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -170,11 +177,11 @@
             <div class="row">
                 <div class="col-lg-8 wow">
                     <div class="contact-info-box address clearfix">
-                        <h3><i class=" icon-map-marker"></i>   آدرس:</h3>
+                        <h3><i class=" icon-map-marker"></i> آدرس:</h3>
                         <span>همه جای همدان</span>
                     </div>
                     <div class="contact-info-box hours clearfix">
-                        <h3><i class="fa-clock-o"></i>   ساعات کاری:</h3>
+                        <h3><i class="fa-clock-o"></i> ساعات کاری:</h3>
                         <span>
                             <strong>
                                 شنبه تا پنجشنبه:
@@ -184,7 +191,7 @@
                         </span>
                     </div>
                     <div class="contact-info-box phone clearfix">
-                        <h3><i class="fa-phone"></i>   علی مکاری</h3>
+                        <h3><i class="fa-phone"></i> علی مکاری</h3>
                         <span>09183115935</span>
                         <span>09186755935</span>
                     </div>
@@ -239,12 +246,20 @@
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top - 102
                 }, 1500, 'easeInOutExpo');
-                /*
-                if you don't want to use the easing effects:
+                event.preventDefault();
+            });
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+
+            $('.animated-scroll').bind('click', function (event) {
+                var $anchor = $(this);
+
                 $('html, body').stop().animate({
-                	scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000);
-                */
+                    scrollTop: $($anchor.attr('href')).offset().top - 102
+                }, 1500, 'easeInOutExpo');
                 event.preventDefault();
             });
         })

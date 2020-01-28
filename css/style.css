@@ -8,7 +8,8 @@
 
 .image-resize {
 	height: 250px;
-	width: auto; /* you can use % */
+	width: auto;
+	/* you can use % */
 }
 
 * {
@@ -158,6 +159,7 @@ p {
 	margin: 0 0 22px 0;
 	color: #fff;
 }
+
 .header h3 {
 	font-family: 'Yekan', 'Montserrat', sans-serif;
 	font-size: 35px;
@@ -317,7 +319,7 @@ p {
 }
 
 
-.featured-work ul li{
+.featured-work ul li {
 	font-size: 16px;
 }
 
