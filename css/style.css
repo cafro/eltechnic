@@ -318,7 +318,7 @@ p {
 
 
 .featured-work ul li{
-	font-size: 25px;
+	font-size: 16px;
 }
 
 .featured-work h2 {
@@ -720,7 +720,7 @@ img {
 /* Talk Business
 ---------------------------------*/
 .business-talking {
-	background: url(../img/section-bg2.jpg) top center no-repeat;
+	background: url(../img/pw_maze_black_2X.png) top center no-repeat;
 	background-size: cover;
 	padding: 60px 0 10px;
 	text-align: center;
