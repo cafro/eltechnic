@@ -158,6 +158,14 @@ p {
 	margin: 0 0 22px 0;
 	color: #fff;
 }
+.header h3 {
+	font-family: 'Yekan', 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	margin: 0 0 22px 0;
+	color: #fff;
+}
 
 .we-create {
 	padding: 0;
@@ -306,6 +314,11 @@ p {
 ---------------------------------*/
 .featured-work {
 	font-size: 14px;
+}
+
+
+.featured-work ul li{
+	font-size: 25px;
 }
 
 .featured-work h2 {
